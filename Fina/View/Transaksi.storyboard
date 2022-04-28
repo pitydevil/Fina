@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JvO-Ja-qkq">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transaksi Baru-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="AddTransaksiViewController" customModule="Fina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informasi Utama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7L-n1-j98">
+                                <rect key="frame" x="20" y="175" width="156" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Jumlah Pengeluaran" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zw7-dW-eH2">
+                                <rect key="frame" x="20" y="215" width="354" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="jumlahPengeluaranText:" destination="yeH-oR-dAB" eventType="editingDidEnd" id="feF-cM-0Ez"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Tanggal Pengeluaran" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsk-Eg-0wo">
+                                <rect key="frame" x="20" y="289" width="354" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Nama Barang / Jasa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VwS-CM-PyP">
+                                <rect key="frame" x="20" y="366" width="354" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KTP" translatesAutoresizingMaskIntoConstraints="NO" id="JOu-EV-iIL">
+                                <rect key="frame" x="20" y="454" width="354" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transaksi Baru" id="Qom-Ai-xmi">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="plus" catalog="system" id="1AY-fE-w5d">
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="Y6W-OH-hqX" id="dY7-Qx-gUI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="trash" catalog="system" id="pXh-QM-5lw">
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="Y6W-OH-hqX" id="771-mM-YiN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="deleteButton" destination="pXh-QM-5lw" id="e6H-hG-KAi"/>
+                        <outlet property="imageBarang" destination="JOu-EV-iIL" id="YoV-B3-Ce2"/>
+                        <outlet property="namaBarangTextfield" destination="VwS-CM-PyP" id="iPx-sq-u5w"/>
+                        <outlet property="pengeluaranTextfield" destination="zw7-dW-eH2" id="h34-RW-XL2"/>
+                        <outlet property="saveButtonItem" destination="1AY-fE-w5d" id="nWG-jp-x1l"/>
+                        <outlet property="tanggalTextfield" destination="fsk-Eg-0wo" id="JNP-nf-Vgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yeH-oR-dAB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1863.0769230769231" y="123.69668246445497"/>
+        </scene>
+        <!--Transaksi-->
+        <scene sceneID="kyJ-Wo-MEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JvO-Ja-qkq" customClass="UINvaigationController" customModule="Fina" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transaksi" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="ejs-MR-mEO"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3sH-44-A4s">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eC9-oA-TnN" kind="relationship" relationship="rootViewController" id="cHD-KD-O0O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyk-kQ-p6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="123.88392857142857"/>
+        </scene>
+        <!--Transaksi-->
+        <scene sceneID="eeo-6G-TsR">
+            <objects>
+                <viewController id="eC9-oA-TnN" customClass="TransaksiViewController" customModule="Fina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVd-IE-IUv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-Wz-0MI">
+                                <rect key="frame" x="20" y="174" width="354" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Transaksi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jal-Va-leq">
+                                        <rect key="frame" x="52" y="8" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-H9-Doy">
+                                        <rect key="frame" x="-2" y="64" width="358" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EUo-Fx-eWo">
+                                <rect key="frame" x="0.0" y="304" width="421" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transactionCell" id="th2-F4-beC" customClass="TransactionTableViewCell" customModule="Fina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="421" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="th2-F4-beC" id="iPQ-Kp-5JI">
+                                            <rect key="frame" x="0.0" y="0.0" width="421" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WJ3-po-lCh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transaksi" id="mk7-gB-JaC">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="eAC-wK-iWA">
+                            <connections>
+                                <action selector="addAction:" destination="eC9-oA-TnN" id="AXU-jl-KNY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="EUo-Fx-eWo" id="zDd-7z-xoG"/>
+                        <outlet property="totalNominalLabel" destination="xkt-H9-Doy" id="4NK-pP-H3u"/>
+                        <outlet property="transactionCard" destination="Ppj-Wz-0MI" id="ZDD-Rd-vR5"/>
+                        <segue destination="Y6W-OH-hqX" kind="show" identifier="goToTransaksi" id="kNs-GC-djL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLB-m9-suq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.15384615384608" y="129.38388625592415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KTP" width="374" height="126"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

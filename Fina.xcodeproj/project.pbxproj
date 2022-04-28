@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175635FDAB9A2EE9C81EAA59 /* Pods_Fina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E080FFBC5D2793A18303B1E1 /* Pods_Fina.framework */; };
 		4B51D4DF281A7869003FA83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51D4DE281A7869003FA83E /* AppDelegate.swift */; };
 		4B51D4E1281A7869003FA83E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51D4E0281A7869003FA83E /* SceneDelegate.swift */; };
-		4B51D4E3281A7869003FA83E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51D4E2281A7869003FA83E /* ViewController.swift */; };
 		4B51D4E6281A7869003FA83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B51D4E4281A7869003FA83E /* Main.storyboard */; };
 		4B51D4E9281A7869003FA83E /* Fina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B51D4E7281A7869003FA83E /* Fina.xcdatamodeld */; };
 		4B51D4EB281A786B003FA83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B51D4EA281A786B003FA83E /* Assets.xcassets */; };
 		4B51D4EE281A786B003FA83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B51D4EC281A786B003FA83E /* LaunchScreen.storyboard */; };
+		4BD920C1281A79CF0041CD77 /* Transaksi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD920C0281A79CF0041CD77 /* Transaksi.storyboard */; };
+		4BD920C6281A7C120041CD77 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD920C4281A7C120041CD77 /* TransactionTableViewCell.swift */; };
+		4BD920C7281A7C120041CD77 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD920C5281A7C120041CD77 /* TransactionTableViewCell.xib */; };
+		4BD920C9281A7D880041CD77 /* TransaksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD920C8281A7D880041CD77 /* TransaksiViewController.swift */; };
+		4BD920CB281A829F0041CD77 /* AddTransaksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD920CA281A829F0041CD77 /* AddTransaksiViewController.swift */; };
+		4BD920CD281A872D0041CD77 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD920CC281A872D0041CD77 /* Extension.swift */; };
+		4BD920D0281ABE410041CD77 /* UINvaigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD920CF281ABE410041CD77 /* UINvaigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F8C78B90E3C9CC465769A2 /* Pods-Fina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fina.debug.xcconfig"; path = "Target Support Files/Pods-Fina/Pods-Fina.debug.xcconfig"; sourceTree = "<group>"; };
 		4B51D4DB281A7869003FA83E /* Fina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B51D4DE281A7869003FA83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B51D4E0281A7869003FA83E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B51D4E2281A7869003FA83E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B51D4E5281A7869003FA83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B51D4E8281A7869003FA83E /* Fina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fina.xcdatamodel; sourceTree = "<group>"; };
 		4B51D4EA281A786B003FA83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B51D4ED281A786B003FA83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B51D4EF281A786B003FA83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD920C0281A79CF0041CD77 /* Transaksi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaksi.storyboard; sourceTree = "<group>"; };
+		4BD920C4281A7C120041CD77 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		4BD920C5281A7C120041CD77 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		4BD920C8281A7D880041CD77 /* TransaksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaksiViewController.swift; sourceTree = "<group>"; };
+		4BD920CA281A829F0041CD77 /* AddTransaksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransaksiViewController.swift; sourceTree = "<group>"; };
+		4BD920CC281A872D0041CD77 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4BD920CF281ABE410041CD77 /* UINvaigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINvaigationController.swift; sourceTree = "<group>"; };
+		A6178394166ABE3F16808661 /* Pods-Fina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fina.release.xcconfig"; path = "Target Support Files/Pods-Fina/Pods-Fina.release.xcconfig"; sourceTree = "<group>"; };
+		E080FFBC5D2793A18303B1E1 /* Pods_Fina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175635FDAB9A2EE9C81EAA59 /* Pods_Fina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC4BBE1DC15F5002691587D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E080FFBC5D2793A18303B1E1 /* Pods_Fina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B51D4D2281A7869003FA83E = {
 			isa = PBXGroup;
 			children = (
 				4B51D4DD281A7869003FA83E /* Fina */,
 				4B51D4DC281A7869003FA83E /* Products */,
+				5D459A9D0EB70E9CEC9E5536 /* Pods */,
+				4AC4BBE1DC15F5002691587D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +87,61 @@
 			children = (
 				4B51D4DE281A7869003FA83E /* AppDelegate.swift */,
 				4B51D4E0281A7869003FA83E /* SceneDelegate.swift */,
-				4B51D4E2281A7869003FA83E /* ViewController.swift */,
-				4B51D4E4281A7869003FA83E /* Main.storyboard */,
+				4BD920BD281A79430041CD77 /* Model */,
+				4BD920BE281A794D0041CD77 /* View */,
+				4BD920BF281A79540041CD77 /* Controller */,
+				4BD920CE281ABE0C0041CD77 /* Miscellaneous */,
 				4B51D4EA281A786B003FA83E /* Assets.xcassets */,
-				4B51D4EC281A786B003FA83E /* LaunchScreen.storyboard */,
 				4B51D4EF281A786B003FA83E /* Info.plist */,
 				4B51D4E7281A7869003FA83E /* Fina.xcdatamodeld */,
 			);
 			path = Fina;
+			sourceTree = "<group>";
+		};
+		4BD920BD281A79430041CD77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BD920BE281A794D0041CD77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B51D4E4281A7869003FA83E /* Main.storyboard */,
+				4BD920C0281A79CF0041CD77 /* Transaksi.storyboard */,
+				4BD920C5281A7C120041CD77 /* TransactionTableViewCell.xib */,
+				4B51D4EC281A786B003FA83E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BD920BF281A79540041CD77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BD920C4281A7C120041CD77 /* TransactionTableViewCell.swift */,
+				4BD920C8281A7D880041CD77 /* TransaksiViewController.swift */,
+				4BD920CA281A829F0041CD77 /* AddTransaksiViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BD920CE281ABE0C0041CD77 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				4BD920CC281A872D0041CD77 /* Extension.swift */,
+				4BD920CF281ABE410041CD77 /* UINvaigationController.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		5D459A9D0EB70E9CEC9E5536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39F8C78B90E3C9CC465769A2 /* Pods-Fina.debug.xcconfig */,
+				A6178394166ABE3F16808661 /* Pods-Fina.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B51D4F2281A786B003FA83E /* Build configuration list for PBXNativeTarget "Fina" */;
 			buildPhases = (
+				3559A42A8BC6AE40E2E7679B /* [CP] Check Pods Manifest.lock */,
 				4B51D4D7281A7869003FA83E /* Sources */,
 				4B51D4D8281A7869003FA83E /* Frameworks */,
 				4B51D4D9281A7869003FA83E /* Resources */,
+				D2E5CDFA135A1239C57A62F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,20 +207,68 @@
 				4B51D4EE281A786B003FA83E /* LaunchScreen.storyboard in Resources */,
 				4B51D4EB281A786B003FA83E /* Assets.xcassets in Resources */,
 				4B51D4E6281A7869003FA83E /* Main.storyboard in Resources */,
+				4BD920C7281A7C120041CD77 /* TransactionTableViewCell.xib in Resources */,
+				4BD920C1281A79CF0041CD77 /* Transaksi.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3559A42A8BC6AE40E2E7679B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E5CDFA135A1239C57A62F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fina/Pods-Fina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fina/Pods-Fina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fina/Pods-Fina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B51D4D7281A7869003FA83E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B51D4E3281A7869003FA83E /* ViewController.swift in Sources */,
+				4BD920C9281A7D880041CD77 /* TransaksiViewController.swift in Sources */,
+				4BD920D0281ABE410041CD77 /* UINvaigationController.swift in Sources */,
+				4BD920CB281A829F0041CD77 /* AddTransaksiViewController.swift in Sources */,
+				4BD920C6281A7C120041CD77 /* TransactionTableViewCell.swift in Sources */,
 				4B51D4DF281A7869003FA83E /* AppDelegate.swift in Sources */,
 				4B51D4E1281A7869003FA83E /* SceneDelegate.swift in Sources */,
 				4B51D4E9281A7869003FA83E /* Fina.xcdatamodeld in Sources */,
+				4BD920CD281A872D0041CD77 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +410,7 @@
 		};
 		4B51D4F3281A786B003FA83E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F8C78B90E3C9CC465769A2 /* Pods-Fina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +439,7 @@
 		};
 		4B51D4F4281A786B003FA83E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6178394166ABE3F16808661 /* Pods-Fina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
